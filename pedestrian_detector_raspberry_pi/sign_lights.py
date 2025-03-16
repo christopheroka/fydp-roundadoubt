@@ -10,19 +10,27 @@ import RPi.GPIO as GPIO
 import time
 
 # Use GPIO pin 18
-led_pin = 4
+led_pin = 14
 
 # Setup
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(led_pin, GPIO.OUT)
+GPIO.setup(15, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+
 
 # Blink forever
 try:
     while True:
         GPIO.output(led_pin, GPIO.HIGH)  # LED on
-        time.sleep(5)                    # Wait 1 second
+        GPIO.output(15, GPIO.HIGH)
+        GPIO.output(18, GPIO.HIGH)
+        time.sleep(2)                    # Wait 1 second
         GPIO.output(led_pin, GPIO.LOW)   # LED off
-        time.sleep(5)                    # Wait 1 second
+        GPIO.output(15, GPIO.LOW)
+        GPIO.output(18, GPIO.LOW)
+
+        time.sleep(2)                    # Wait 1 second
         
 except KeyboardInterrupt:
     # Clean up when you press ctrl+c

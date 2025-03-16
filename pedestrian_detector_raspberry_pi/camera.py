@@ -10,7 +10,6 @@ model = YOLO("./model.pt")
 import cv2
 
 import RPi.GPIO as GPIO
-import time
 
 # Use GPIO pin 18
 led_pin = 4
@@ -25,6 +24,7 @@ try:
         frame = picam2.capture_array()
         frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
         result = model(frame)
+        result[0].show()
         for box in result[0].boxes:
             x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[0])
             confidence = float(box.conf[0])
