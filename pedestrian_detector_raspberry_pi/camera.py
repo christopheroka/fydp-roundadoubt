@@ -12,10 +12,11 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 # Set pins
-FLOOR_LIGHT_PIN = 2
+SIGN_LEFT_PIN = 2
 SIGN_STRAIGHT_PIN = 3
-SIGN_LEFT_PIN = 14
-SIGN_RIGHT_PIN = 15
+SIGN_RIGHT_PIN = 4
+FLOOR_LIGHT_PIN = 14
+
 
 # Setup
 GPIO.setmode(GPIO.BCM)
@@ -102,17 +103,17 @@ try:
             confidence = float(box.conf[0])
             print("confidence", confidence)
             print(f"({x1},{y1}),({x2},{y2})")
-            if x1 < CAMERA_OUTPUT_DIM[1]/3 and x2 < CAMERA_OUTPUT_DIM[1]/3:
+            if x1 < CAMERA_OUTPUT_DIM[1]/4 and x2 < CAMERA_OUTPUT_DIM[1]/4:
                 if not leftLightIsOn:
                     turnSignOn(SIGN_LEFT_PIN)
             elif leftLightIsOn:
                 turnSignOff(SIGN_LEFT_PIN)
-            if x1 >= CAMERA_OUTPUT_DIM[1]/3 and x1 < 2*CAMERA_OUTPUT_DIM[1] / 3 and x1 >= CAMERA_OUTPUT_DIM[1]/3 and x2 < 2*CAMERA_OUTPUT_DIM[1] /3:
+            if x1 >= CAMERA_OUTPUT_DIM[1]/4 and x1 < 3*CAMERA_OUTPUT_DIM[1] / 4 and x1 >= CAMERA_OUTPUT_DIM[1]/4 and x2 < 3*CAMERA_OUTPUT_DIM[1] /4:
                 if not straightLightIsOn:
                     turnSignOn(SIGN_STRAIGHT_PIN)
             elif straightLightIsOn:
                 turnSignOff(SIGN_STRAIGHT_PIN)
-            if x1 >= 2*CAMERA_OUTPUT_DIM[1]/3 and x2 >= 2*CAMERA_OUTPUT_DIM[1]/3:
+            if x1 >= 3*CAMERA_OUTPUT_DIM[1]/4 and x2 >= 3*CAMERA_OUTPUT_DIM[1]/4:
                 if not rightLightIsOn:
                     turnSignOn(SIGN_RIGHT_PIN)
             elif rightLightIsOn:
