@@ -24,26 +24,16 @@ GPIO.setup(SIGN_STRAIGHT_PIN, GPIO.OUT)
 GPIO.setup(SIGN_LEFT_PIN, GPIO.OUT)
 GPIO.setup(SIGN_RIGHT_PIN, GPIO.OUT)
 
+SHOW_PREVIEW = False
+CAMERA_OUTPUT_DIM = (640,480)
 
-# Blink forever
-try:   
-    while True:
-        frame = picam2.capture_array()
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
-        result = model(frame)
-        result[0].show()
-        for box in result[0].boxes:
-            x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[0])
-            confidence = float(box.conf[0])
-            print("confidence", confidence)
-            print(f"({x1},{y1}),({x2},{y2})")
-
-except KeyboardInterrupt:
-    # Clean up when you press ctrl+c
-    GPIO.cleanup()
-
+floorLightIsOn = False
+straightLightIsOn = False
+leftLightIsOn = False
+rightLightIsOn = False
 
 def turnFloorLightOn():
+  global floorLightIsOn
   print("Light turning on")
   GPIO.output(FLOOR_LIGHT_PIN, GPIO.HIGH)
   sleep(1)
@@ -52,37 +42,83 @@ def turnFloorLightOn():
   floorLightIsOn = True
 
 def turnFloorLightOff():
-  print("Light turning off");
-  GPIO.output(FLOOR_LIGHT_PIN, GPIO.HIGH);
-  sleep(2.5);
-  GPIO.output(FLOOR_LIGHT_PIN, GPIO.LOW);
-  print("Light turned off");
-  floorLightIsOn = False;
+  global floorLightIsOn
+  print("Light turning off")
+  GPIO.output(FLOOR_LIGHT_PIN, GPIO.HIGH)
+  sleep(2.5)
+  GPIO.output(FLOOR_LIGHT_PIN, GPIO.LOW)
+  print("Light turned off")
+  floorLightIsOn = False
 
 def turnSignOn(pin):
+  global straightLightIsOn
+  global leftLightIsOn
+  global rightLightIsOn
   if pin == SIGN_STRAIGHT_PIN: 
-    turnFloorLightOn();
-  GPIO.output(pin, GPIO.HIGH);
+    turnFloorLightOn()
+  GPIO.output(pin, GPIO.HIGH)
   sign_type = ""
   if pin == SIGN_STRAIGHT_PIN:
-    straightLightIsOn = True;
+    straightLightIsOn = True
     sign_type="straight"
   elif pin == SIGN_LEFT_PIN:
+    leftLightIsOn = True
     sign_type="left"
   elif pin == SIGN_RIGHT_PIN:
+    rightLightIsOn = True
     sign_type = "right"
   print(f'Sign {sign_type} turned on')
 
 def turnSignOff(pin):
+  global straightLightIsOn
+  global leftLightIsOn
+  global rightLightIsOn
   if pin == SIGN_STRAIGHT_PIN:
     turnFloorLightOff()
   GPIO.output(pin, GPIO.LOW)
   sign_type = ""
   if pin == SIGN_STRAIGHT_PIN:
-    straightLightIsOff = True;
+    straightLightIsOn = False
     sign_type="straight"
   elif pin == SIGN_LEFT_PIN:
+    leftLightIsOn = False
     sign_type="left"
   elif pin == SIGN_RIGHT_PIN:
+    rightLightIsOn = False
     sign_type = "right"
   print(f'Sign {sign_type} turned off')
+
+
+# Blink forever
+try:   
+    while True:
+        frame = picam2.capture_array()
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
+        result = model(frame)
+        if SHOW_PREVIEW:
+            result[0].show()
+        for box in result[0].boxes:
+            x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[0])
+            confidence = float(box.conf[0])
+            print("confidence", confidence)
+            print(f"({x1},{y1}),({x2},{y2})")
+            if x1 < CAMERA_OUTPUT_DIM[1]/3 and x2 < CAMERA_OUTPUT_DIM[1]/3:
+                if not leftLightIsOn:
+                    turnSignOn(SIGN_LEFT_PIN)
+            elif leftLightIsOn:
+                turnSignOff(SIGN_LEFT_PIN)
+            if x1 >= CAMERA_OUTPUT_DIM[1]/3 and x1 < 2*CAMERA_OUTPUT_DIM[1] / 3 and x1 >= CAMERA_OUTPUT_DIM[1]/3 and x2 < 2*CAMERA_OUTPUT_DIM[1] /3:
+                if not straightLightIsOn:
+                    turnSignOn(SIGN_STRAIGHT_PIN)
+            elif straightLightIsOn:
+                turnSignOff(SIGN_STRAIGHT_PIN)
+            if x1 >= 2*CAMERA_OUTPUT_DIM[1]/3 and x2 >= 2*CAMERA_OUTPUT_DIM[1]/3:
+                if not rightLightIsOn:
+                    turnSignOn(SIGN_RIGHT_PIN)
+            elif rightLightIsOn:
+                turnSignOff(SIGN_RIGHT_PIN)
+
+except KeyboardInterrupt:
+    # Clean up when you press ctrl+c
+    GPIO.cleanup()
+
