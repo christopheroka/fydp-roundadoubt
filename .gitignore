@@ -141,4 +141,7 @@ notebook/templates/*.html
 
 # pixi environments
 .pixi
-*.egg-info
+*.egg-infoAVRIL_data_analysis/Experiment Data/
+AVRIL_data_analysis/SSD Analysis CSVs/
+AVRIL_data_analysis/Deceleration Analysis CSVs/
+AVRIL_data_analysis/Velocity Analysis CSVs/
