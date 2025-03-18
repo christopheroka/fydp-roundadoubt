@@ -145,3 +145,4 @@ notebook/templates/*.html
 AVRIL_data_analysis/SSD Analysis CSVs/
 AVRIL_data_analysis/Deceleration Analysis CSVs/
 AVRIL_data_analysis/Velocity Analysis CSVs/
+AVRIL_data_analysis/Processed CSVs/
