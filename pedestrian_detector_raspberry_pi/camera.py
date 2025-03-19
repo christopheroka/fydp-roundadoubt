@@ -31,7 +31,7 @@ straightLightIsOn = False
 leftLightIsOn = False
 rightLightIsOn = False
 
-PERSISTENCE_FRAMES = 5
+PERSISTENCE_FRAMES = 1
 leftCounter = 0
 straightCounter = 0
 rightCounter = 0
