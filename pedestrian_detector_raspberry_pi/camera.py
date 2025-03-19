@@ -89,6 +89,7 @@ try:
         frame = picam2.capture_array()
         frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
         result = model(frame)
+
         if SHOW_PREVIEW:
             result[0].show()
         if len(result[0].boxes) < 1:
@@ -102,6 +103,7 @@ try:
         leftHumanDetected = False
         straightHumanDetected = False
         rightHumanDetected = False
+
         for box in result[0].boxes:
             x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[0])
             confidence = float(box.conf[0])
@@ -109,15 +111,15 @@ try:
             # print(f"({x1},{y1}),({x2},{y2})")
             box_middle =(x2-x1)/2
             print(f"BOX_COORDS: {x1},{x2}, BOX_MIDDLE_COORDS: {box_middle}, LEFT: {leftLightIsOn}, STRAIGHT: {straightLightIsOn}, RIGHT: {rightLightIsOn}, FLOOR: {floorLightIsOn}")
-            if box_middle < CAMERA_OUTPUT_DIM[1]/3:
+            if box_middle < CAMERA_OUTPUT_DIM[0]/3:
                 leftHumanDetected = True
                 if not leftLightIsOn:
                     turnSignOn(SIGN_LEFT_PIN)
-            if box_middle >= CAMERA_OUTPUT_DIM[1]/3 and box_middle < 2*CAMERA_OUTPUT_DIM[1] / 3:
+            if box_middle >= CAMERA_OUTPUT_DIM[0]/3 and box_middle < 2*CAMERA_OUTPUT_DIM[0] / 3:
                 straightHumanDetected = True
                 if not straightLightIsOn:
                     turnSignOn(SIGN_STRAIGHT_PIN)
-            if box_middle >= 2*CAMERA_OUTPUT_DIM[1]/3:
+            if box_middle >= 2*CAMERA_OUTPUT_DIM[0]/3:
                 rightHumanDetected = True
                 if not rightLightIsOn:
                     turnSignOn(SIGN_RIGHT_PIN)
