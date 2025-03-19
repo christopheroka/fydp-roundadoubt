@@ -24,7 +24,7 @@ GPIO.setup(SIGN_STRAIGHT_PIN, GPIO.OUT)
 GPIO.setup(SIGN_LEFT_PIN, GPIO.OUT)
 GPIO.setup(SIGN_RIGHT_PIN, GPIO.OUT)
 
-SHOW_PREVIEW = False
+SHOW_PREVIEW = True
 CAMERA_OUTPUT_DIM = (640,480)
 
 floorLightIsOn = False
@@ -104,12 +104,12 @@ try:
         straightHumanDetected = False
         rightHumanDetected = False
 
-        for box in result[0].boxes:
-            x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[0])
+        for i, box in enumerate(result[0].boxes):
+            x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[i])
             confidence = float(box.conf[0])
             # print("confidence", confidence)
             # print(f"({x1},{y1}),({x2},{y2})")
-            box_middle =(x2-x1)/2
+            box_middle = x1 + (x2-x1)/2
             print(f"BOX_COORDS: {x1},{x2}, BOX_MIDDLE_COORDS: {box_middle}, LEFT: {leftLightIsOn}, STRAIGHT: {straightLightIsOn}, RIGHT: {rightLightIsOn}, FLOOR: {floorLightIsOn}")
             if box_middle < CAMERA_OUTPUT_DIM[0]/3:
                 leftHumanDetected = True
