@@ -9,7 +9,6 @@ model = YOLO("./model.pt")
 
 import cv2
 import RPi.GPIO as GPIO
-from time import sleep
 
 # Set pins
 SIGN_LEFT_PIN = 2
@@ -35,20 +34,14 @@ rightLightIsOn = False
 
 def turnFloorLightOn():
   global floorLightIsOn
-  print("Light turning on")
+  print("Floor light turning on")
   GPIO.output(FLOOR_LIGHT_PIN, GPIO.HIGH)
-  sleep(1)
-  GPIO.output(FLOOR_LIGHT_PIN, GPIO.LOW)
-  print("Light turned on")
   floorLightIsOn = True
 
 def turnFloorLightOff():
   global floorLightIsOn
-  print("Light turning off")
-  GPIO.output(FLOOR_LIGHT_PIN, GPIO.HIGH)
-  sleep(2.5)
   GPIO.output(FLOOR_LIGHT_PIN, GPIO.LOW)
-  print("Light turned off")
+  print("Floor light turned off")
   floorLightIsOn = False
 
 def turnSignOn(pin):
@@ -98,26 +91,42 @@ try:
         result = model(frame)
         if SHOW_PREVIEW:
             result[0].show()
+        if len(result[0].boxes) < 1:
+            if leftLightIsOn:
+               turnSignOff(SIGN_LEFT_PIN)
+            if straightLightIsOn:
+               turnSignOff(SIGN_STRAIGHT_PIN)
+            if rightLightIsOn:
+               turnSignOff(SIGN_RIGHT_PIN)
+
+        leftHumanDetected = False
+        straightHumanDetected = False
+        rightHumanDetected = False
         for box in result[0].boxes:
             x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[0])
             confidence = float(box.conf[0])
-            print("confidence", confidence)
-            print(f"({x1},{y1}),({x2},{y2})")
-            if x1 < CAMERA_OUTPUT_DIM[1]/4 and x2 < CAMERA_OUTPUT_DIM[1]/4:
+            # print("confidence", confidence)
+            # print(f"({x1},{y1}),({x2},{y2})")
+            box_middle =(x2-x1)/2
+            print(f"BOX_COORDS: {x1},{x2}, BOX_MIDDLE_COORDS: {box_middle}, LEFT: {leftLightIsOn}, STRAIGHT: {straightLightIsOn}, RIGHT: {rightLightIsOn}, FLOOR: {floorLightIsOn}")
+            if box_middle < CAMERA_OUTPUT_DIM[1]/3:
+                leftHumanDetected = True
                 if not leftLightIsOn:
                     turnSignOn(SIGN_LEFT_PIN)
-            elif leftLightIsOn:
-                turnSignOff(SIGN_LEFT_PIN)
-            if x1 >= CAMERA_OUTPUT_DIM[1]/4 and x1 < 3*CAMERA_OUTPUT_DIM[1] / 4 and x1 >= CAMERA_OUTPUT_DIM[1]/4 and x2 < 3*CAMERA_OUTPUT_DIM[1] /4:
+            if box_middle >= CAMERA_OUTPUT_DIM[1]/3 and box_middle < 2*CAMERA_OUTPUT_DIM[1] / 3:
+                straightHumanDetected = True
                 if not straightLightIsOn:
                     turnSignOn(SIGN_STRAIGHT_PIN)
-            elif straightLightIsOn:
-                turnSignOff(SIGN_STRAIGHT_PIN)
-            if x1 >= 3*CAMERA_OUTPUT_DIM[1]/4 and x2 >= 3*CAMERA_OUTPUT_DIM[1]/4:
+            if box_middle >= 2*CAMERA_OUTPUT_DIM[1]/3:
+                rightHumanDetected = True
                 if not rightLightIsOn:
                     turnSignOn(SIGN_RIGHT_PIN)
-            elif rightLightIsOn:
-                turnSignOff(SIGN_RIGHT_PIN)
+        if not leftHumanDetected and leftLightIsOn:
+           turnSignOff(SIGN_LEFT_PIN)
+        if not straightHumanDetected and straightLightIsOn:
+           turnSignOff(SIGN_STRAIGHT_PIN)
+        if not rightHumanDetected and rightLightIsOn:
+           turnSignOff(SIGN_RIGHT_PIN)
 
 except KeyboardInterrupt:
     # Clean up when you press ctrl+c
