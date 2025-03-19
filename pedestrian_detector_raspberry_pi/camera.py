@@ -16,7 +16,6 @@ SIGN_STRAIGHT_PIN = 3
 SIGN_RIGHT_PIN = 4
 FLOOR_LIGHT_PIN = 14
 
-
 # Setup
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(FLOOR_LIGHT_PIN, GPIO.OUT)
@@ -24,13 +23,18 @@ GPIO.setup(SIGN_STRAIGHT_PIN, GPIO.OUT)
 GPIO.setup(SIGN_LEFT_PIN, GPIO.OUT)
 GPIO.setup(SIGN_RIGHT_PIN, GPIO.OUT)
 
-SHOW_PREVIEW = True
+SHOW_PREVIEW = False
 CAMERA_OUTPUT_DIM = (640,480)
 
 floorLightIsOn = False
 straightLightIsOn = False
 leftLightIsOn = False
 rightLightIsOn = False
+
+PERSISTENCE_FRAMES = 5
+leftCounter = 0
+straightCounter = 0
+rightCounter = 0
 
 def turnFloorLightOn():
   global floorLightIsOn
@@ -82,53 +86,55 @@ def turnSignOff(pin):
     sign_type = "right"
   print(f'Sign {sign_type} turned off')
 
-
 # Blink forever
 try:   
-    while True:
-        frame = picam2.capture_array()
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
-        result = model(frame)
+  while True:
+      frame = picam2.capture_array()
+      frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
+      result = model(frame)
 
-        if SHOW_PREVIEW:
-            result[0].show()
-        if len(result[0].boxes) < 1:
-            if leftLightIsOn:
-               turnSignOff(SIGN_LEFT_PIN)
-            if straightLightIsOn:
-               turnSignOff(SIGN_STRAIGHT_PIN)
-            if rightLightIsOn:
-               turnSignOff(SIGN_RIGHT_PIN)
+      if SHOW_PREVIEW:
+          result[0].show()
+      if len(result[0].boxes) < 1:
+          leftCounter = max(0, leftCounter - 1)
+          straightCounter = max(0, straightCounter - 1)
+          rightCounter = max(0, rightCounter - 1)
+      else:
+          for i, box in enumerate(result[0].boxes):
+              x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[i])
+              confidence = float(box.conf[0])
+              # print("confidence", confidence)
+              # print(f"({x1}, {y1}), ({x2}, {y2})")
 
-        leftHumanDetected = False
-        straightHumanDetected = False
-        rightHumanDetected = False
+              box_middle = x1 + (x2 - x1) / 2
+              print(f"BOX_COORDS: {x1},{x2}, BOX_MIDDLE_COORDS: {box_middle}, CONFIDENCE: {confidence}")
 
-        for i, box in enumerate(result[0].boxes):
-            x1, y1, x2, y2 = map(int, result[0].boxes.xyxy[i])
-            confidence = float(box.conf[0])
-            # print("confidence", confidence)
-            # print(f"({x1},{y1}),({x2},{y2})")
-            box_middle = x1 + (x2-x1)/2
-            print(f"BOX_COORDS: {x1},{x2}, BOX_MIDDLE_COORDS: {box_middle}, LEFT: {leftLightIsOn}, STRAIGHT: {straightLightIsOn}, RIGHT: {rightLightIsOn}, FLOOR: {floorLightIsOn}")
-            if box_middle < CAMERA_OUTPUT_DIM[0]/3:
-                leftHumanDetected = True
-                if not leftLightIsOn:
-                    turnSignOn(SIGN_LEFT_PIN)
-            if box_middle >= CAMERA_OUTPUT_DIM[0]/3 and box_middle < 2*CAMERA_OUTPUT_DIM[0] / 3:
-                straightHumanDetected = True
-                if not straightLightIsOn:
-                    turnSignOn(SIGN_STRAIGHT_PIN)
-            if box_middle >= 2*CAMERA_OUTPUT_DIM[0]/3:
-                rightHumanDetected = True
-                if not rightLightIsOn:
-                    turnSignOn(SIGN_RIGHT_PIN)
-        if not leftHumanDetected and leftLightIsOn:
-           turnSignOff(SIGN_LEFT_PIN)
-        if not straightHumanDetected and straightLightIsOn:
-           turnSignOff(SIGN_STRAIGHT_PIN)
-        if not rightHumanDetected and rightLightIsOn:
-           turnSignOff(SIGN_RIGHT_PIN)
+              # Keep the light on if ped. was last seen within a small amount of frames (make it less finicky)
+              if box_middle < CAMERA_OUTPUT_DIM[0] / 3:
+                  leftCounter = PERSISTENCE_FRAMES
+                  if not leftLightIsOn:
+                      turnSignOn(SIGN_LEFT_PIN)
+              elif box_middle < 2 * CAMERA_OUTPUT_DIM[0] / 3:
+                  straightCounter = PERSISTENCE_FRAMES
+                  if not straightLightIsOn:
+                      turnSignOn(SIGN_STRAIGHT_PIN)
+              else:
+                  rightCounter = PERSISTENCE_FRAMES
+                  if not rightLightIsOn:
+                      turnSignOn(SIGN_RIGHT_PIN)
+
+      # Turn off lights only when persistance counters reach zero
+      if leftCounter == 0 and leftLightIsOn:
+          turnSignOff(SIGN_LEFT_PIN)
+      if straightCounter == 0 and straightLightIsOn:
+          turnSignOff(SIGN_STRAIGHT_PIN)
+      if rightCounter == 0 and rightLightIsOn:
+          turnSignOff(SIGN_RIGHT_PIN)
+
+      # Reduce persistance counters each frame if no ped. seen
+      leftCounter = max(0, leftCounter - 1)
+      straightCounter = max(0, straightCounter - 1)
+      rightCounter = max(0, rightCounter - 1)
 
 except KeyboardInterrupt:
     # Clean up when you press ctrl+c
