@@ -1,0 +1,45 @@
+participant,trial,driver_direction,alert_combination,pedestrian_crossing,aoi,percent_of_total_fixations,average_fixation_duration,tff
+Pete,1,Left,Sign 2 + crosswalk,Straight ahead,sign2,8.7,231.0,N/A
+Pete,1,Left,Sign 2 + crosswalk,Straight ahead,crosswalk,5.88,219.0,N/A
+Pete,1,Left,Sign 2 + crosswalk,Straight ahead,pedestrian,5.88,1012.0,950
+Pete,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,sign2,2.08,789.0,N/A
+Pete,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,crosswalk,3.92,702.0,N/A
+Pete,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,pedestrian,1.96,642.0,1790
+Pete,5,Left,Sign 3,To driver’s left,sign3,2.78,642.0,N/A
+Pete,5,Left,Sign 3,To driver’s left,pedestrian,8.33,443.0,927
+Pete,7,Left,Sign 3 + crosswalk,To driver’s left,sign3,3.39,1677.0,N/A
+Pete,7,Left,Sign 3 + crosswalk,To driver’s left,crosswalk,8.82,675.0,N/A
+Pete,7,Left,Sign 3 + crosswalk,To driver’s left,pedestrian,14.71,234.0,146
+Pete,8,Left,Sign 3 + crosswalk,Straight ahead,sign3,1.61,1053.0,N/A
+Pete,8,Left,Sign 3 + crosswalk,Straight ahead,crosswalk,3.33,320.0,N/A
+Pete,8,Left,Sign 3 + crosswalk,Straight ahead,pedestrian,3.33,785.0,1675
+Pete,9,Straight (right lane),Sign 3,Straight ahead,sign3,8.33,594.0,N/A
+Pete,9,Straight (right lane),Sign 3,Straight ahead,pedestrian,14.29,396.0,934
+Pete,11,Left,Sign 2,To driver’s right,sign2,6.9,238.0,N/A
+Pete,11,Left,Sign 2,To driver’s right,pedestrian,11.76,245.0,3666
+Pete,12,Right,Sign 3,To driver’s right,pedestrian,4.72,1340.0,18709
+Pete,13,Left,Crosswalk,To driver’s left,crosswalk,3.03,366.0,N/A
+Pete,13,Left,Crosswalk,To driver’s left,pedestrian,6.06,757.0,1347
+Pete,14,Right,Sign 2,To driver’s left,sign2,1.89,1550.0,N/A
+Pete,15,Straight (left lane),Sign 2,Straight ahead,sign2,4.29,179.0,N/A
+Pete,15,Straight (left lane),Sign 2,Straight ahead,pedestrian,8.33,936.0,537
+Sabina,1,Left,Sign 2 + crosswalk,Straight ahead,crosswalk,3.7,327.0,N/A
+Sabina,1,Left,Sign 2 + crosswalk,Straight ahead,pedestrian,3.7,185.0,2111
+Sabina,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,crosswalk,3.33,376.0,N/A
+Sabina,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,pedestrian,3.33,359.0,3780
+Sabina,5,Left,Sign 3,To driver’s left,pedestrian,10.34,634.0,585
+Sabina,6,Straight (left lane),No alert,To driver’s right,pedestrian,5.0,318.0,4178
+Sabina,7,Left,Sign 3 + crosswalk,To driver’s left,sign3,2.9,386.0,N/A
+Sabina,7,Left,Sign 3 + crosswalk,To driver’s left,crosswalk,11.43,467.0,N/A
+Sabina,7,Left,Sign 3 + crosswalk,To driver’s left,pedestrian,5.71,336.0,2775
+Sabina,9,Straight (right lane),Sign 3,Straight ahead,sign3,1.54,673.0,N/A
+Sabina,9,Straight (right lane),Sign 3,Straight ahead,pedestrian,5.56,321.0,2026
+Sabina,11,Left,Sign 2,To driver’s right,sign2,12.2,341.0,N/A
+Sabina,11,Left,Sign 2,To driver’s right,pedestrian,4.0,209.0,5924
+Sabina,12,Right,Sign 3,To driver’s right,sign3,6.9,380.0,N/A
+Sabina,12,Right,Sign 3,To driver’s right,pedestrian,9.52,801.0,4590
+Sabina,13,Left,Crosswalk,To driver’s left,crosswalk,0.0,693.0,N/A
+Sabina,13,Left,Crosswalk,To driver’s left,pedestrian,0.0,422.0,1004
+Sabina,15,Straight (left lane),Sign 2,Straight ahead,sign2,3.7,314.0,N/A
+Sabina,15,Straight (left lane),Sign 2,Straight ahead,pedestrian,3.12,459.0,3728
+Sabina,16,Left,No alert,Left,pedestrian,8.33,469.0,865
