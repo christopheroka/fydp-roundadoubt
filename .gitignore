@@ -1,3 +1,11 @@
+# Our data folders with huge CSVs (download & add from Google Drive if needed)
+AVRIL_data_analysis/Experiment Data/
+AVRIL_data_analysis/SSD Analysis CSVs/
+AVRIL_data_analysis/Deceleration Analysis CSVs/
+AVRIL_data_analysis/Velocity Analysis CSVs/
+AVRIL_data_analysis/Processed CSVs/
+AVRIL_data_analysis/Eye Tracker Data/
+
 *.bundle.*
 lib/
 node_modules/
@@ -142,8 +150,3 @@ notebook/templates/*.html
 # pixi environments
 .pixi
 *.egg-info
-AVRIL_data_analysis/Experiment Data/
-AVRIL_data_analysis/SSD Analysis CSVs/
-AVRIL_data_analysis/Deceleration Analysis CSVs/
-AVRIL_data_analysis/Velocity Analysis CSVs/
-AVRIL_data_analysis/Processed CSVs/
