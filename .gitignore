@@ -5,6 +5,7 @@ AVRIL_data_analysis/Deceleration Analysis CSVs/
 AVRIL_data_analysis/Velocity Analysis CSVs/
 AVRIL_data_analysis/Processed CSVs/
 AVRIL_data_analysis/Eye Tracker Data/
+AVRIL_data_analysis/Braking Distance Analysis CSVs/
 
 *.bundle.*
 lib/

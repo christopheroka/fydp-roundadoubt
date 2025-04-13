@@ -23,6 +23,7 @@ Pete,13,Left,Crosswalk,To driver’s left,pedestrian,6.06,757.0,1347
 Pete,14,Right,Sign 2,To driver’s left,sign2,1.89,1550.0,N/A
 Pete,15,Straight (left lane),Sign 2,Straight ahead,sign2,4.29,179.0,N/A
 Pete,15,Straight (left lane),Sign 2,Straight ahead,pedestrian,8.33,936.0,537
+Pete,16,Left,No alert,Left,pedestrian,8.33,469.0,865
 Sabina,1,Left,Sign 2 + crosswalk,Straight ahead,crosswalk,3.7,327.0,N/A
 Sabina,1,Left,Sign 2 + crosswalk,Straight ahead,pedestrian,3.7,185.0,2111
 Sabina,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,crosswalk,3.33,376.0,N/A
@@ -43,3 +44,41 @@ Sabina,13,Left,Crosswalk,To driver’s left,pedestrian,0.0,422.0,1004
 Sabina,15,Straight (left lane),Sign 2,Straight ahead,sign2,3.7,314.0,N/A
 Sabina,15,Straight (left lane),Sign 2,Straight ahead,pedestrian,3.12,459.0,3728
 Sabina,16,Left,No alert,Left,pedestrian,8.33,469.0,865
+Jenn,1,Left,Sign 2 + crosswalk,Straight ahead,sign2,4.76,1139.0,N/A
+Jenn,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,sign2,4.55,938.0,N/A
+Jenn,4,Straight (right lane),Sign 2 + crosswalk,To driver’s right,crosswalk,5.0,247.0,N/A
+Jenn,5,Left,Sign 3,To driver’s left,sign3,1.19,1448.0,N/A
+Jenn,5,Left,Sign 3,To driver’s left,pedestrian,13.33,355.0,767
+Jenn,7,Left,Sign 3 + crosswalk,To driver’s left,sign3,4.0,1330.0,N/A
+Jenn,7,Left,Sign 3 + crosswalk,To driver’s left,crosswalk,2.56,235.0,N/A
+Jenn,7,Left,Sign 3 + crosswalk,To driver’s left,pedestrian,12.82,1924.0,1745
+Jenn,8,Left,Sign 3 + crosswalk,Straight ahead,sign3,2.86,532.0,N/A
+Jenn,8,Left,Sign 3 + crosswalk,Straight ahead,crosswalk,6.67,325.0,N/A
+Jenn,8,Left,Sign 3 + crosswalk,Straight ahead,pedestrian,6.67,224.0,921
+Jenn,9,Straight (right lane),Sign 3,Straight ahead,sign3,4.17,441.0,N/A
+Jenn,9,Straight (right lane),Sign 3,Straight ahead,pedestrian,21.21,611.0,984
+Jenn,11,Left,Sign 2,To driver’s right,sign2,8.33,301.0,N/A
+Jenn,12,Right,Sign 3,To driver’s right,sign3,14.29,251.0,N/A
+Jenn,12,Right,Sign 3,To driver’s right,pedestrian,20.75,285.0,4035
+Jenn,13,Left,Crosswalk,To driver’s left,crosswalk,11.76,364.0,N/A
+Jenn,13,Left,Crosswalk,To driver’s left,pedestrian,8.82,349.0,812
+Jenn,14,Right,Sign 2,To driver’s left,sign2,6.25,1512.0,N/A
+Jenn,15,Straight (left lane),Sign 2,Straight ahead,sign2,10.53,427.0,N/A
+Jenn,15,Straight (left lane),Sign 2,Straight ahead,pedestrian,25.0,1166.0,820
+Jenn,16,Left,No alert,Left,pedestrian,18.18,393.0,1063
+Azaan,1,Left,Sign 2 + crosswalk,Straight ahead,sign2,23.53,228.0,N/A
+Azaan,5,Left,Sign 3,To driver’s left,sign3,3.33,359.0,N/A
+Azaan,5,Left,Sign 3,To driver’s left,pedestrian,21.74,722.0,1051
+Azaan,7,Left,Sign 3 + crosswalk,To driver’s left,sign3,4.76,656.0,N/A
+Azaan,7,Left,Sign 3 + crosswalk,To driver’s left,crosswalk,10.53,186.0,N/A
+Azaan,7,Left,Sign 3 + crosswalk,To driver’s left,pedestrian,15.79,284.0,1253
+Azaan,8,Left,Sign 3 + crosswalk,Straight ahead,pedestrian,0.0,132.0,1258
+Azaan,9,Straight (right lane),Sign 3,Straight ahead,sign3,24.32,572.0,N/A
+Azaan,9,Straight (right lane),Sign 3,Straight ahead,pedestrian,4.76,2395.0,2383
+Azaan,11,Left,Sign 2,To driver’s right,sign2,10.81,207.0,N/A
+Azaan,12,Right,Sign 3,To driver’s right,pedestrian,4.76,395.0,7606
+Azaan,13,Left,Crosswalk,To driver’s left,pedestrian,6.9,494.0,1938
+Azaan,14,Right,Sign 2,To driver’s left,sign2,7.14,692.0,N/A
+Azaan,15,Straight (left lane),Sign 2,Straight ahead,sign2,12.5,405.0,N/A
+Azaan,15,Straight (left lane),Sign 2,Straight ahead,pedestrian,13.33,1083.0,1006
+Azaan,16,Left,No alert,Left,pedestrian,20.0,148.0,1158

@@ -1,9 +1,11 @@
 Participant,Trial,Mean_SSD_Diff,Driver_Direction,Alert_Combination,Pedestrian_Crossing
+Azaan,16,-6.085412939384947,Left,No alert,To driver's left
 Ionel,15,5.494234390459575,Straight (left lane),Sign 2,Straight ahead
 Pete,9,2.8371467169485625,Straight (right lane),Sign 3,Straight ahead
 Adity,13,-5.436508143846178,Left,Crosswalk,To driver’s left
 Adity,12,3.7757714339707142,Right,Sign 3,To driver’s right
 Pete,8,-0.9295296947957159,Left,Sign 3 + crosswalk,Straight ahead
+Azaan,15,-5.574559390010668,Straight (left lane),Sign 2,Straight ahead
 Pete,15,3.3729559464844105,Straight (left lane),Sign 2,Straight ahead
 Adity,11,9.403736812874762,Left,Sign 2,To driver’s right
 Ionel,13,7.241186358303468,Left,Crosswalk,To driver’s left
@@ -12,28 +14,49 @@ Ionel,8,-3.0469362766007855,Left,Sign 3 + crosswalk,Straight ahead
 Ionel,9,1.1550853787547604,Straight (right lane),Sign 3,Straight ahead
 Pete,11,-2.1321230864569447,Left,Sign 2,To driver’s right
 Ionel,12,9.533077978783107,Right,Sign 3,To driver’s right
+Azaan,13,-8.173438340390778,Left,Crosswalk,To driver’s left
 Pete,13,4.331813692047498,Left,Crosswalk,To driver’s left
+Azaan,8,-15.446631401910354,Left,Sign 3 + crosswalk,Straight ahead
+Azaan,9,-2.5775741367465104,Straight (right lane),Sign 3,Straight ahead
 Pete,12,16.639996148481483,Right,Sign 3,To driver’s right
 Ionel,11,4.4043315907358185,Left,Sign 2,To driver’s right
+Azaan,12,-27.673877109480163,Right,Sign 3,To driver’s right
 Carl,8,-4.508379353149926,Left,Sign 3 + crosswalk,Straight ahead
+Kapi,5,-0.5361398823838741,Left,Sign 3,To driver’s left
+Sabina,12,10.624140355077394,Right,Sign 3,To driver’s right
+Sabina,1,5.682769850642184,Left,Sign 2 + crosswalk,Straight ahead
 Adity,8,6.094761545037007,Left,Sign 3 + crosswalk,Straight ahead
 Calvin,1,2.6811731299776396,Left,Sign 2 + crosswalk,Straight ahead
 Adity,9,1.8562142886981048,Straight (right lane),Sign 3,Straight ahead
+Sabina,13,5.09476907269197,Left,Crosswalk,To driver’s left
+Kapi,4,1.369585547985304,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Madhav,1,-5.505546958576115,Left,Sign 2 + crosswalk,Straight ahead
 Carl,9,6.061827641738708,Straight (right lane),Sign 3,Straight ahead
 Jason,8,-1.0903379406023828,Left,Sign 3 + crosswalk,Straight ahead
+Jenn,8,-16.218896357553422,Left,Sign 3 + crosswalk,Straight ahead
+Kapi,6,-3.5849209956380075,Straight (left lane),No alert,To driver’s right
+Sabina,11,-2.948148689915847,Left,Sign 2,To driver’s right
+Kapi,7,0.5444501242399113,Left,Sign 3 + crosswalk,To driver’s left
+Jenn,9,0.8531463649098462,Straight (right lane),Sign 3,Straight ahead
 Eric,1,-5.033364673210311,Left,Sign 2 + crosswalk,Straight ahead
 Eric,5,-2.952433934181276,Left,Sign 3,To driver’s left
 Mayurah,9,-9.52460058215797,Straight (right lane),Sign 3,Straight ahead
 Madhav,6,-9.277730075289918,Straight (left lane),No alert,To driver’s right
+Sabina,7,3.627690611328396,Left,Sign 3 + crosswalk,To driver’s left
 Calvin,6,0.07459219067816966,Straight (left lane),No alert,To driver’s right
+Sabina,6,0.5946718626627588,Straight (left lane),No alert,To driver’s right
+Sabina,15,6.847760407081025,Straight (left lane),Sign 2,Straight ahead
 Madhav,7,1.5302383963167743,Left,Sign 3 + crosswalk,To driver’s left
 Mayurah,8,-3.9260693573187866,Left,Sign 3 + crosswalk,Straight ahead
 Eric,4,-9.429705425723593,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Eric,6,-3.7734022093726076,Straight (left lane),No alert,To driver’s right
 Madhav,5,-2.1941761562573343,Left,Sign 3,To driver’s left
+Sabina,4,-0.6129120447903154,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Calvin,4,-1.2511528045297584,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Calvin,5,5.2990101343554405,Left,Sign 3,To driver’s left
+Sabina,5,2.2068529611892407,Left,Sign 3,To driver’s left
+Sabina,16,-1.757237731366057,Left,No alert,To driver's left
+Kapi,1,-6.386718375039911,Left,Sign 2 + crosswalk,Straight ahead
 Madhav,4,-3.8527248755701136,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Eric,7,-1.8101010831376423,Left,Sign 3 + crosswalk,To driver’s left
 Carl,11,6.60916595271217,Left,Sign 2,To driver’s right
@@ -41,54 +64,77 @@ Carl,1,1.3559426511468435,Left,Sign 2 + crosswalk,Straight ahead
 Mayurah,6,-33.76806496927778,Straight (left lane),No alert,To driver’s right
 Madhav,9,4.225526616565681,Straight (right lane),Sign 3,Straight ahead
 Hassan,11,-2.3045082803144505,Left,Sign 2,To driver’s right
+Sabina,8,0.3276361065835278,Left,Sign 3 + crosswalk,Straight ahead
 Mayurah,13,-7.694356827367838,Left,Crosswalk,To driver’s left
 Calvin,8,3.8808907927786267,Left,Sign 3 + crosswalk,Straight ahead
 Adity,1,9.863128015929071,Left,Sign 2 + crosswalk,Straight ahead
 Calvin,9,5.696303533868943,Straight (right lane),Sign 3,Straight ahead
 Mayurah,12,-3.3598969970497508,Right,Sign 3,To driver’s right
+Sabina,9,1.3937235953169835,Straight (right lane),Sign 3,Straight ahead
 Madhav,8,-1.2743168827920102,Left,Sign 3 + crosswalk,Straight ahead
 Mayurah,7,-15.686982129339931,Left,Sign 3 + crosswalk,To driver’s left
 Eric,9,2.277830670464317,Straight (right lane),Sign 3,Straight ahead
 Carl,12,9.684983781706798,Right,Sign 3,To driver’s right
+Jenn,1,-9.14869490917241,Left,Sign 2 + crosswalk,Straight ahead
 Mayurah,5,-18.549008900466657,Left,Sign 3,To driver’s left
 Mayurah,11,-19.649508081408317,Left,Sign 2,To driver’s right
 Mayurah,4,-0.5031368634792716,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Carl,13,4.894754205815034,Left,Crosswalk,To driver’s left
 Eric,8,-2.7882351065874658,Left,Sign 3 + crosswalk,Straight ahead
 Jason,6,-1.8418774631314254,Straight (left lane),No alert,To driver’s right
+Jenn,4,-7.7617242931861945,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Carl,7,-1.0464145489202097,Left,Sign 3 + crosswalk,To driver’s left
 Mayurah,15,-1.8682114352044656,Straight (left lane),Sign 2,Straight ahead
 Adity,7,2.607381098898733,Left,Sign 3 + crosswalk,To driver’s left
 Adity,6,-2.17208905035804,Straight (left lane),No alert,To driver’s right
 Mayurah,1,-11.360498215481085,Left,Sign 2 + crosswalk,Straight ahead
 Carl,6,-13.71583991543435,Straight (left lane),No alert,To driver’s right
+Jenn,5,-1.881076582629558,Left,Sign 3,To driver’s left
 Jason,7,2.5218688949488755,Left,Sign 3 + crosswalk,To driver’s left
+Jenn,7,1.3429487065500683,Left,Sign 3 + crosswalk,To driver’s left
 Jason,5,2.336326266299911,Left,Sign 3,To driver’s left
 Carl,4,-7.6932069641417975,Straight (right lane),Sign 2 + crosswalk,To driver’s right
+Kapi,9,-7.701733118639658,Straight (right lane),Sign 3,Straight ahead
 Adity,4,3.4795873935423685,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Adity,5,4.412369123939338,Left,Sign 3,To driver’s left
+Kapi,8,-1.616040117297592,Left,Sign 3 + crosswalk,Straight ahead
 Carl,5,4.555941257905672,Left,Sign 3,To driver’s left
 Carl,15,4.683626698371434,Straight (left lane),Sign 2,Straight ahead
 Jason,4,0.144214719809631,Straight (right lane),Sign 2 + crosswalk,To driver’s right
+Jenn,6,-16.696733130872413,Straight (left lane),No alert,To driver’s right
 Madhav,12,0.35666730095730836,Right,Sign 3,To driver’s right
 Eric,11,-4.493057244417808,Left,Sign 2,To driver’s right
 Ionel,7,7.344447367182458,Left,Sign 3 + crosswalk,To driver’s left
 Calvin,12,15.484555987624635,Right,Sign 3,To driver’s right
+Jenn,11,-13.768852980998604,Left,Sign 2,To driver’s right
+Azaan,5,-4.330736498245766,Left,Sign 3,To driver’s left
 Ionel,6,3.688596574580333,Straight (left lane),No alert,To driver’s right
+Kapi,16,-0.786848579221902,Left,No alert,To driver's left
 Pete,1,-5.624391048856785,Left,Sign 2 + crosswalk,Straight ahead
 Madhav,13,0.3350949446069967,Left,Crosswalk,To driver’s left
 Madhav,11,-0.6501501541715462,Left,Sign 2,To driver’s right
 Eric,12,12.265684404528571,Right,Sign 3,To driver’s right
 Ionel,4,3.516775701876548,Straight (right lane),Sign 2 + crosswalk,To driver’s right
+Azaan,7,-5.393058303501544,Left,Sign 3 + crosswalk,To driver’s left
 Calvin,11,-2.678535266644897,Left,Sign 2,To driver’s right
+Jenn,12,11.921754526074626,Right,Sign 3,To driver’s right
+Jenn,13,2.4667343497456495,Left,Crosswalk,To driver’s left
+Azaan,6,-22.966955794873382,Straight (left lane),No alert,To driver’s right
+Kapi,15,4.168775364650604,Straight (left lane),Sign 2,Straight ahead
 Ionel,5,6.242465446692629,Left,Sign 3,To driver’s left
 Eric,13,-7.997138597390282,Left,Crosswalk,To driver’s left
 Pete,6,4.363369016901981,Straight (left lane),No alert,To driver’s right
 Ionel,1,6.496863609539875,Left,Sign 2 + crosswalk,Straight ahead
+Kapi,11,-4.312495878179267,Left,Sign 2,To driver’s right
+Jenn,16,-0.6377758779506633,Left,No alert,To driver's left
 Calvin,15,8.960944664239664,Straight (left lane),Sign 2,Straight ahead
 Pete,7,4.94860640519138,Left,Sign 3 + crosswalk,To driver’s left
 Madhav,15,3.9675845514590766,Straight (left lane),Sign 2,Straight ahead
 Jason,11,-4.840472946356583,Left,Sign 2,To driver’s right
 Pete,5,4.163962058929961,Left,Sign 3,To driver’s left
+Kapi,12,-0.3742201439222382,Right,Sign 3,To driver’s right
+Azaan,1,-18.027832427170306,Left,Sign 2 + crosswalk,Straight ahead
+Jenn,15,-1.7743554467501685,Straight (left lane),Sign 2,Straight ahead
+Kapi,13,-0.5136501286887788,Left,Crosswalk,To driver’s left
 Pete,4,13.874006488982417,Straight (right lane),Sign 2 + crosswalk,To driver’s right
 Eric,15,-4.578014655963511,Straight (left lane),Sign 2,Straight ahead
