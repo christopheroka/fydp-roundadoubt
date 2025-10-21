@@ -1,0 +1,276 @@
+City,"State
+County
+Country",Intersection,Lat,Lng,Type,Status,Control Type ,Other Control,Approaches,Driveways,ICD (m),Functional Class,LaneType,Year Completed,Comments
+Wellesley,"ON
+Waterloo
+Canada",Ament Line / Herrgott Rd.,43.55994,-80.64612,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2018,https://www.newhamburgindependent.ca/news-story/8660450-wellesley-township-roundabout-construction-begins-next-week/. Year Completed estimated (2018-2019).
+Waterloo,"ON
+Waterloo Regional Municipality
+Canada",Ira Needles Blvd. / Erb St.,43.44632,-80.57117,"Roundabout
+",Existing,All-Way Yield,None,4,0,49.425,Other (At-Grade),2,2004,Fishhook pavement markings. Series of five roundabouts. Functional Class: Arterial ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Ira Needles Blvd. / Thorndale Dr.,43.44178,-80.56523,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,41.6242,Other (At-Grade),2,2016,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Ira Needles Blvd. / The Boardwalk,43.4354,-80.55823,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,45.0976,Other (At-Grade),2,2010,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Erb St. W / Turtle Island Recycling / Costco parking lot,43.44386,-80.57867,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,41.6227,Other (At-Grade),2,2016,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Bridge St / Lancaster St W / Carisbrook Dr,43.48226,-80.48275,"Roundabout
+",Existing,All-Way Yield,None,4,0,26.8643,Other (At-Grade),2,2009,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Fountain St N / Kossuth Rd / Fairway Rd N,43.4434,-80.38764,"Roundabout
+",Existing,All-Way Yield,None,4,0,52.0288,Other (At-Grade),2,2011,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Old Zeller Dr / Fairway Rd N / Woolner Trail,43.44796,-80.40444,"Roundabout
+",Existing,All-Way Yield,None,4,0,44.2212,Other (At-Grade),2,2012,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Homer Watson Blvd / Block Line Rd,43.41839,-80.47074,"Roundabout
+",Existing,All-Way Yield,None,4,0,51.1828,Other (At-Grade),2,2011,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Fountain St S / Dickie Settlement Rd,43.38351,-80.39744,"Roundabout
+",Existing,All-Way Yield,None,4,0,49.4763,Other (At-Grade),2,2010,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Pinebush RD / Thompson Dr / Tyler St,43.41532,-80.28663,"Roundabout
+",Existing,All-Way Yield,None,4,0,47.7152,Other (At-Grade),2,2009,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Hespeler Rd,43.42,-80.32873,"Roundabout
+",Existing,All-Way Yield,None,4,0,47.7115,Other (At-Grade),2,2013,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Westmount Rd N,43.47651,-80.56252,"Roundabout
+",Existing,All-Way Yield,None,4,0,49.4003,Other (At-Grade),2,2014,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Homer Watson Blvd / Ottawa St S,43.42681,-80.48233,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,58.1148,Other (At-Grade),2,2017,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Ottawa St S / Alpine Rd / Conestoga Pkwy,43.42555,-80.48362,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,50.3094,"Freeway Ramps (Grade-Separated)
+",2,2017,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",University Ave E / Labrador Dr,43.51759,-80.51453,"Roundabout
+",Existing,All-Way Yield,Unknown,3,0,41.572,Other (At-Grade),2,2010,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Labrador Dr / RIM Campus Ln,43.51601,-80.51332,"Roundabout
+",Existing,All-Way Yield,Unknown,3,0,24.251,Other (At-Grade),1,2010,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",New Bedford Dr / Eastbridge Blvd / Shediac Crescent,43.51109,-80.50054,Traffic Calming,"Circle
+Existing",All-Way Yield,Unknown,4,0,41.5765,Other (At-Grade),1,,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Margaret Ave S / Union St E,43.46732,-80.49974,"Roundabout
+",Existing,All-Way Yield,Unknown,3,0,22.5369,Other (At-Grade),1,2008,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Manitou Dr / Bleams Rd,43.41267,-80.44937,"Roundabout
+",Existing,All-Way Yield,None,3,0,47.7173,Other (At-Grade),2,2015,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd,43.41159,-80.30834,"Roundabout
+",Existing,All-Way Yield,None,4,0,54.659,Other (At-Grade),3+,2016,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd,43.40618,-80.30705,"Roundabout
+",Existing,All-Way Yield,None,4,0,53.7962,Other (At-Grade),2,2016,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd,43.3983,-80.30433,"Roundabout
+",Existing,All-Way Yield,None,4,0,56.4066,Other (At-Grade),2,2016,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd,43.37114,-80.29522,"Roundabout
+",Existing,All-Way Yield,None,4,0,42.5409,Other (At-Grade),2,2016,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd,43.36531,-80.29182,"Roundabout
+",Existing,All-Way Yield,None,3,0,41.6767,Other (At-Grade),2,2015,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd,43.35831,-80.28678,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,48.6285,Other (At-Grade),2,2016,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Laurelwood Dr / James Downey Way,43.47541,-80.5687,"Roundabout
+",Existing,All-Way Yield,None,4,0,41.601,Other (At-Grade),1,2015,ICD estimated from Google Maps linework.
+Waterloo,"ON
+Waterloo
+Canada",Laurelwood Dr / Beaver Creek Rd,43.4722,-80.57985,"Roundabout
+",Existing,All-Way Yield,None,4,0,19.9349,Other (At-Grade),1,2008,ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Grand Flats Trail / Eden Oak Trail,43.45085,-80.40324,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,29.4794,Other (At-Grade),1,2015,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd. / Dundas S.t S,43.35462,-80.28745,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,41.6841,Other (At-Grade),2,2017,ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd. / Champlain Blvd.,43.3484,-80.28853,"Roundabout
+",Existing,All-Way Yield,Unknown,4,0,40.8199,Other (At-Grade),2,2017,Year Completed estimated (2016-2018). ICD estimated from Google Maps linework.
+Cambridge,"ON
+Waterloo
+Canada",Myers Rd. / Franklin Blvd.,43.34326,-80.28711,"Roundabout
+",Existing,All-Way Yield,None,4,0,50.3777,Other (At-Grade),1,2018,https://www.kitchenertoday.com/local-news/part-of-franklin-now-closed-in-cambridge-for-roundabout-work-973622 ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Doon S Dr. / Doon Mills Dr. / Chestnut Hill Crescent,43.38216,-80.42836,"Roundabout
+",Existing,All-Way Yield,None,4,0,29.5128,Other (At-Grade),1,2003,Year Completed estimated (before 2005). ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Thomas Slee Dr. / Robert Ferrie Dr.,43.37616,-80.42419,"Roundabout
+",Existing,All-Way Yield,None,4,0,34.7244,Other (At-Grade),1,2007,Year Completed estimated (2006-2009). ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Robert Ferrie Dr. / Evens Pond Crescent / S Creek Dr.,43.3779,-80.44337,"Roundabout
+",Existing,All-Way Yield,None,4,0,34.7234,Other (At-Grade),1,2010,Year Completed estimated (2009-2011). ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Huron Rd. / Strasburg Rd.,43.39217,-80.46629,"Roundabout
+",Existing,All-Way Yield,None,4,0,51.205,Other (At-Grade),2,2011,Year Completed estimated (2010-2012). ICD estimated from Google Maps linework.
+Kitchener,"ON
+Waterloo
+Canada",Huron Rd. / Woodbine Ave.,43.3831,-80.48326,"Roundabout
+",Existing,All-Way Yield,None,4,0,45.1366,Other (At-Grade),2,2012,Year Completed estimated (2011-2012). ICD estimated from Google Maps linework.
+Waterloo,"ON
+Regional Municipality of Waterloo
+Canada",Townline Rd. / Can-Amera Pkwy.,43.41154,-80.28042,"Roundabout
+",Existing,All-Way Yield,None,3,0,60,Other (At-Grade),2,2003,Year Completed estimated (2002-2004).
+Waterloo,"ON
+Waterloo
+Canada",Hagey Blvd. / Wes Graham Way,43.47997,-80.54992,"Roundabout
+",Existing,All-Way Yield,None,4,0,80,Other (At-Grade),1,2003,Year Completed estimated (before 2005).
+Kitchener,"ON
+Waterloo
+Canada",Block Line Rd / Fallowfield Dr,43.41875,-80.46799,"Roundabout
+",Existing,All-Way Yield,None,4,0,50,Other (At-Grade),2,2011,Year Completed estimated (2009-2012).
+Waterloo,"ON
+Waterloo
+Canada",Laurelwood Dr. / Blue Beach Blvd.,43.46997,-80.59517,"Roundabout
+",Existing,All-Way Yield,Unknown,3,0,40,Other (At-Grade),1,2003,Year Completed estimated (2001-2004).
+Cambridge,"ON
+Waterloo
+Canada",Horton Walk / Baldwin Dr.,43.44729,-80.30699,"Roundabout
+",Existing,All-Way Yield,None,4,0,30,Other (At-Grade),1,2010,Year Completed estimated (2009-2012).
+Waterloo,"ON
+Waterloo
+Canada",Davenport Rd. / Old Abbey Rd. /,43.49957,-80.52551,"Roundabout
+",Existing,All-Way Yield,None,4,0,36,Other (At-Grade),1,2012,Right-turn-only leg on north leg. Year Completed estimated (2011-2012).
+Waterloo,"ON
+Waterloo
+Canada",Conestoga Rd. / Kraus Dr.,43.49983,-80.52906,"Roundabout
+",Existing,All-Way Yield,None,4,0,35,Other (At-Grade),1,2009,Add lane right-turn bypass lane on west leg.
+Waterloo,"ON
+Waterloo
+Canada",Hagey Blvd. / Frank Trompa Dr.,43.47734,-80.54814,"Roundabout
+",Existing,All-Way Yield,None,4,0,35,Other (At-Grade),1,2003,Year Completed estimated (before 2005).
+Waterloo,"ON
+Waterloo
+Canada",Columbia St. W / Bennington Gate / Chancery Ln.,43.46485,-80.57403,"Roundabout
+",Existing,All-Way Yield,None,4,0,45,Other (At-Grade),2,2018,Year Completed estimated (2016-2018).
+Kitchener,"ON
+Waterloo
+Canada",Max Becker Dr. /,43.40516,-80.50125,"Roundabout
+",Existing,All-Way Yield,None,3,0,35,Other (At-Grade),1,2002,Year Completed estimated (2001-2005).
+Kitchener,"ON
+Waterloo
+Canada",Cotton Grass St/,43.40708,-80.50347,"Roundabout
+",Existing,All-Way Yield,None,3,0,35,Other (At-Grade),1,2002,Year Completed estimated (2001-2005).
+Waterloo,"ON
+Waterloo
+Canada",Erb St. W / Platinum Dr. /,43.44326,-80.58032,"Roundabout
+",Existing,All-Way Yield,None,4,0,55,Other (At-Grade),2,2016,
+Waterloo,"ON
+Waterloo
+Canada",Columbia St. W / Platinum Dr. / Ladyslipper Dr.,43.4495,-80.58669,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2021,Year Completed estimated (2018-2021).
+Waterloo,"ON
+Waterloo
+Canada",Platinum Dr. / Copper St. / Titanium St.,43.44817,-80.58553,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2021,
+Waterloo,"ON
+Waterloo
+Canada",Platinum Dr. / Copper St. / Titanium St.,43.44573,-80.58208,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2021,
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd. / Avenue Rd.,43.38042,-80.29905,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),2,2020,
+Cambridge,"ON
+Waterloo
+Canada",Franklin Blvd. / McQueen Shaver Blvd.,43.33603,-80.28439,"Roundabout
+",Existing,All-Way Yield,None,2,0,,Other (At-Grade),1,2021,
+Cambridge,"ON
+Waterloo
+Canada",Linden Dr. / Knotty Pine Ave.,43.39547,-80.3838,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2020,No splitter island on east leg. Year Completed estimated (2019-2021).
+Cambridge,"ON
+Waterloo
+Canada",Linden Dr. / Rosebrugh Ave.,43.39199,-80.38087,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2020,No splitter islands on two legs. Year Completed estimated (2019-2021).
+Cambridge,"ON
+Waterloo
+Canada",Equestrian Way / Ridge Rd.,43.42266,-80.34502,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),1,2019,
+Cambridge,"ON
+Waterloo
+Canada",Equestrian Way / Compass Trl.,43.42698,-80.34183,"Roundabout
+",Existing,All-Way Yield,None,3,0,45,Other (At-Grade),1,2019,
+Cambridge,"ON
+Waterloo
+Canada",Wesley Blvd. / Fitzgerald Dr.,43.35356,-80.27646,"Roundabout
+",Existing,All-Way Yield,None,3,0,30,Other (At-Grade),1,2013,Year Completed estimated (2013-2016).
+Cambridge,"ON
+Waterloo
+Canada",Wesley Blvd. / Maple Bush Dr.,43.35602,-80.27737,"Roundabout
+",Existing,All-Way Yield,None,4,0,30,Other (At-Grade),1,2013,Year Completed estimated (2013-2016).
+Cambridge,"ON
+Waterloo
+Canada",Green Gate Blvd. / Nottinghill Dr.,43.35712,-80.27966,"Roundabout
+",Existing,All-Way Yield,None,4,0,30,Other (At-Grade),1,2014,Year Completed estimated (2013-2016).
+Cambridge,"ON
+Waterloo
+Canada",Water St. S,43.33372,-80.31312,"Roundabout
+",Existing,All-Way Yield,None,3,0,,Other (At-Grade),Nan,2021,
+Cambridge,"ON
+Waterloo
+Canada",Dundas St. / Beverly St.,43.36588,-80.30592,"Roundabout
+",Existing,All-Way Yield,None,4,0,,Other (At-Grade),2,2022,https://www.therecord.com/local-cambridge/news/2022/09/10/what-s-going-on-here-beverly-and-dundas-streets-in-cambridge.html
+Cambridge,"ON
+Waterloo
+Canada",Blenheim Rd. / Bismark Dr.,43.36041,-80.34133,"Roundabout
+",Existing,All-Way Yield,None,4,0,42,Other (At-Grade),1,2022,https://www.cambridgetoday.ca/local-news/citys-newest-roundabout-unique-to-cambridge-west-development-5511610
+Kitchener,"ON
+Waterloo
+Canada",Blair Creek Dr. / Doon South Dr.,43.37282,-80.43378,"Roundabout
+",Existing,All-Way Yield,None,3,0,35,Other (At-Grade),1,2018,Year Completed estimated (2017-2018).
+Kitchener,"ON
+Waterloo
+Canada",Blair Creek Dr. / Thomas Slee Dr.,43.37033,-80.44091,"Roundabout
+",Existing,All-Way Yield,None,3,0,35,Other (At-Grade),1,2017,Year Completed estimated (2017-2018).
+Waterloo,"ON
+Waterloo
+Canada",Millennium Blvd. / Crossgate Blvd.,43.52326,-80.4969,"Roundabout
+",Existing,All-Way Yield,None,4,0,35,Other (At-Grade),1,2011,West leg stubbed. Year Completed estimated (2009-2012).
+Kitchener,"ON
+Waterloo
+Canada",Fischer-Hallman Rd. / Bleams Rd.,43.40176,-80.49651,"Roundabout
+",Existing,All-Way Yield,None,4,0,60,Other (At-Grade),2,2022,Originally constructed as 3x2 roundabout with additional southbound through lane that is marked off by striping and delineators. https://kitchener.ctvnews.ca/kitchener-s-newest-roundabout-closing-for-overnight-paving-1.5935760
