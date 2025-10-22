@@ -44,7 +44,7 @@ This project was published in the [conference proceedings](https://iuw25.wordpre
 ## Interactive Dashboard of Driving Simulator Results
 ![interactive dashboard](https://github.com/christopheroka/fydp-roundadoubt/blob/main/images/dashboard.png "interactive dashboard")
 
-## Roundadoubt Group &copy 2025
+## Roundadoubt Group &copy; 2025
 ![logo2](https://github.com/christopheroka/fydp-roundadoubt/blob/main/images/logo%20V2.png "logo2")
 
 
